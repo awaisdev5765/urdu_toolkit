@@ -1,0 +1,28 @@
+name: urdu_toolkit
+description: >-
+  Urdu and RTL text utilities for Flutter and Dart: transliteration, number and
+  date formatting, Nastaliq-friendly text handling, and a directional text widget.
+version: 0.1.0
+homepage: https://github.com/awaisdev5765/urdu_toolkit
+repository: https://github.com/awaisdev5765/urdu_toolkit
+issue_tracker: https://github.com/awaisdev5765/urdu_toolkit/issues
+topics:
+  - urdu
+  - rtl
+  - text
+  - internationalization
+  - localization
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  test: ^1.25.0
+  lints: ^5.0.0
