@@ -18,7 +18,10 @@
 /// UrduDigits.toUrdu('2026');                  // '۲۰۲۶'
 /// UrduDates.format(DateTime(2026, 8, 15));    // '۱۵ اگست ۲۰۲۶'
 /// Transliterator.toUrdu('kya haal hai');       // 'کیا حال ہے'
-/// UrduText.containsUrdu('آپ کیسے ہیں؟');        // true
+/// UrduRelativeTime.format(anHourAgo);          // 'ایک گھنٹے پہلے'
+/// UrduNumberWords.convert(15);                 // 'پندرہ'
+/// UrduCurrency.format(1234567);                // '۱۲,۳۴,۵۶۷ روپے'
+/// '2026'.urduDigits;                           // '۲۰۲۶'
 /// ```
 ///
 /// And for Flutter:
@@ -30,6 +33,10 @@
 /// ```
 library;
 
+export 'src/currency.dart' show UrduCurrency;
+export 'src/extensions.dart' show UrduStringExtensions;
+export 'src/number_words.dart' show UrduNumberWords;
+export 'src/relative_time.dart' show UrduRelativeTime;
 export 'src/text.dart'
     show UrduDates, UrduDigits, Transliterator, UrduTextUtils;
 export 'src/urdu_text.dart' show UrduText;

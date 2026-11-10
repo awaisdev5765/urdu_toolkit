@@ -11,3 +11,4 @@
 library;
 
 export 'src/urdu_text.dart' show UrduText;
+export 'src/nastaliq_theme.dart' show UrduTextTheme;

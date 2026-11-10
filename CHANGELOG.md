@@ -1,22 +1,19 @@
 # Changelog
 
-## 0.1.0
+# Changelog
 
-Initial release.
+## 0.2.0
 
 ### Added
-- `UrduDigits` — convert between Western and Urdu-Indic digits, and parse
-  integers and doubles written in either form. Accepts the Arabic decimal
-  separator `٫`.
-- `UrduDates` — format Gregorian dates with Urdu month and weekday names and
-  Urdu digits.
-- `Transliterator` — rule-based Roman-to-Urdu transliteration, longest match
-  first, with uppercase letters mapping to retroflex counterparts and a
-  word-final special case for `hai`.
-- `UrduTextUtils` — detect Arabic-script characters, trim invisible Unicode
-  control characters from the edges of a string, and normalise Arabic letter
-  variants to their Urdu forms where the mapping is unambiguous.
-- `UrduText` — a Flutter widget that applies RTL when the text contains
-  Arabic-script characters, and optionally applies a Nastaliq font family to
-  Arabic-script glyphs while leaving Latin to the ambient font.
-- 41 tests. Zero analyzer issues under strict casts, inference and raw types.
+- `UrduRelativeTime` — chat-ready relative time: "۵ منٹ پہلے", "کل", "پرسوں",
+  with future "…بعد" forms and Urdu's directional day words handled correctly
+- `UrduNumberWords` — integers to Urdu words ("پندرہ", lakh/crore scale),
+  including negatives
+- `UrduCurrency` — rupee formatting with South Asian 2-2-2 digit grouping and
+  optional in-words expansion: "۱۲,۳۴,۵۶۷ روپے (بارہ لاکھ …)"
+- `UrduStringExtensions` — `.urduDigits`, `.westernDigits`, `.hasUrdu`,
+  `.stripAarab`, `.urduNormalised`, `.isTransliterable`
+- `UrduTextTheme.nastaliq()` — Nastaliq-safe line heights (the script clips
+  with Flutter defaults; 2.0 multiplier is the community-recommended value)
+- 21 new tests (65 total)
+
